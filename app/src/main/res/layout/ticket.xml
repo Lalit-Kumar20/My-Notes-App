@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+
+    android:orientation="vertical"
+    android:padding="3pt"
+    android:paddingBottom="3pt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="3pt"
+        android:layout_marginLeft="3pt"
+        android:layout_marginTop="3pt"
+        android:layout_marginEnd="3pt"
+        android:layout_marginRight="3pt"
+        android:background="@drawable/ticket_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="3pt"
+            android:text="Title"
+            android:textColor="@color/brown"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/dView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:padding="3pt"
+            android:text="Description"
+            android:textColor="@color/brown"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="3pt"
+        android:layout_marginLeft="3pt"
+        android:layout_marginEnd="3pt"
+        android:layout_marginRight="3pt"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/ivUpdate"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="3pt"
+            app:srcCompat="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="3pt"
+            app:srcCompat="@drawable/delete" />
+    </LinearLayout>
+
+</LinearLayout>
